@@ -6,15 +6,11 @@ import About from "./Components/About";
 function App() {
   return (
     <div className="flex flex-col no-scrollbar scroll-smooth ">
-      <div className="snap-center snap-y" id="Home">
-        <Home />
-      </div>
-      <div className="snap-center snap-y	">
-        <About />
-      </div>
-      <div className="snap-center snap-y	">
-        <SideBar />
-      </div>
+      <Home />
+
+      <About />
+
+      <SideBar />
     </div>
   );
 }
