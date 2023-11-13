@@ -28,10 +28,10 @@ const Projects = forwardRef((props, ref) => {
           PROJECTS LIST
         </h1>
 
-        <div className="flex flex-wrap justify-between w-screen mt-32">
+        <div className="flex flex-wrap justify-between w-screen mt-32  ">
           {splitProjects.map((columnProjects) => (
             <div
-              className="flex flex-col w-1/2 mb-4"
+              className="flex flex-col w-1/2 mb-4 hover:scale-125 duration-300 ease-in-out "
               key={columnProjects[0].title}
             >
               {columnProjects.map((project) => (

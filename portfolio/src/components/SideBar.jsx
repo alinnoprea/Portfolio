@@ -1,6 +1,7 @@
 import React from "react";
-import { BsPlus } from "react-icons/bs";
-import { FaFire } from "react-icons/fa";
+import { BsPlus, BsBookFill } from "react-icons/bs";
+import { FaHome, FaInfo, FaPhoneAlt } from "react-icons/fa";
+
 import PropTypes from "prop-types";
 
 const SideBar = ({
@@ -13,22 +14,22 @@ const SideBar = ({
     <div className="container">
       <div className="fixed top-0 left-0 h-screen w-16 m-0 flex flex-col  justify-center bg-primary text-secondary">
         <SideBarIcon
-          icon={<FaFire size="52" />}
+          icon={<FaHome size="52" />}
           onClick={scrollToHome}
           id="Home"
         />
         <SideBarIcon
-          icon={<BsPlus size="52" />}
+          icon={<FaInfo size="52" />}
           onClick={scrollToAbout}
           id="About"
         />
         <SideBarIcon
-          icon={<BsPlus size="52" />}
+          icon={<BsBookFill size="52" />}
           onClick={scrollToProjects}
           id="Projects"
         />
         <SideBarIcon
-          icon={<BsPlus size="52" />}
+          icon={<FaPhoneAlt size="52" />}
           onClick={scrollToContact}
           id="Contact"
         />
